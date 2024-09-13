@@ -66,7 +66,6 @@ void freeList(List* newList) {
     free(newList); 
 }
 
-// Function to print the list
 void printList(List* list) {
     if (list == NULL || list->head == NULL) {
         printf("Lista vazia\n");
