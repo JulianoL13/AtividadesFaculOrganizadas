@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Simple Calculator</h1>
+
+  <form> 
+    <input type="text" id="display" placeholder="Result will appear here." readonly /> 
+
+    <label for="numero1">First Number:</label>
+    <input id="numero1" type="number" placeholder="Enter first number." />
+
+    <label for="numero2">Second Number:</label>
+    <input type="number" id="numero2" placeholder="Enter second number." />
+
+    <div class="buttons"> 
+      <button onclick="soma(event)" aria-label="Addition">+</button>
+      <button onclick="subtracao(event)" aria-label="Subtraction">-</button>
+      <button onclick="multiplicacao(event)" aria-label="Multiplication">*</button>
+      <button onclick="divisao(event)" aria-label="Division">/</button>
+      <button onclick="clear(event)" aria-label="Clear">C</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
