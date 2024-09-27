@@ -18,5 +18,10 @@ int main() {
     printf("\nLista ordenada: \n");
     printList(head);
 
+    freeList(head);
+
+    printf("\nLista ordenada: \n");
+    printList(head);
+
     return 0;
 }
