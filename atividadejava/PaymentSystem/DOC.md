@@ -28,4 +28,10 @@ try {
 } catch (PaymentException e) {
   System.err.println("Error: " + e.getMessage());
 }
+
+try {
+  account.makePayment(creditPayment, 500.0);
+} catch (PaymentException e) {
+  System.err.println("Error: " + e.getMessage());
+}
 ;
